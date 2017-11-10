@@ -29,6 +29,7 @@ namespace deallus
                       "~/Content/grid.css",                     
                       "~/Content/camera.css",
                       "~/Content/slider.css",
+                      "~/Content/contact-form.css",
                       "~/Content/bootstrap.min.css",
                       "~/Content/jquerysctipttop.css",                      
                       "~/Content/style.css"));

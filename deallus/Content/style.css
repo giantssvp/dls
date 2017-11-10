@@ -127,7 +127,8 @@ img {
                     HEADER styles
 =========================================================*/
 #header {
-  position: relative;
+    position: relative;
+    background: #129894;
 }
 @media (max-width: 1199px) {
   #header {
@@ -296,18 +297,22 @@ img {
 /*============  Headers  =============*/
 .header_1 {
   text-align: center;
-  font: 600 48px/60px 'Open Sans', sans-serif;
+  font: 600 48px/20px 'Open Sans', sans-serif;
 }
 .header_1.indent_1 {
-  padding-bottom: 56px;
+  padding-bottom: 10px;
 }
 .header_1.indent_2 {
-  padding-bottom: 34px;
+  padding-bottom: 10px;
+}
+.header_6 {
+    text-align: center;
+    font: 600 20px/30px 'Open Sans', sans-serif;
 }
 @media (min-width: 980px) and (max-width: 1199px) {
   .header_1 {
     font-size: 40px;
-    line-height: 52px;
+    line-height: 22px;
   }
 }
 @media (max-width: 767px) {
@@ -336,64 +341,64 @@ img {
 }
 /*============  Wraps  =============*/
 .wrap_1 {
-  padding-top: 124px;
+  padding-top: 34px;
 }
 .wrap_2 {
-  padding-top: 71px;
+  padding-top: 30px;
 }
 .wrap_3 {
-  padding-bottom: 34px;
+  padding-bottom: 14px;
 }
 .wrap_4 {
-  padding-bottom: 53px;
+  padding-bottom: 23px;
 }
 .wrap_5 {
-  padding-bottom: 95px;
+  padding-bottom: 45px;
 }
 .wrap_6 {
-  padding-bottom: 120px;
+  padding-bottom: 50px;
 }
 .wrap_7 {
-  padding-top: 82px;
-}
-.wrap_8 {
-  padding-bottom: 48px;
-}
-.wrap_9 {
-  padding-top: 104px;
-}
-.wrap_10 {
-  padding-bottom: 44px;
-}
-.wrap_11 {
-  padding-top: 123px;
-}
-.wrap_12 {
-  padding-bottom: 91px;
-}
-.wrap_13 {
-  padding-top: 42px;
-}
-.wrap_14 {
-  padding-top: 91px;
-}
-.wrap_15 {
-  padding-bottom: 118px;
-}
-.wrap_16 {
   padding-top: 32px;
 }
+.wrap_8 {
+  padding-bottom: 18px;
+}
+.wrap_9 {
+  padding-top: 44px;
+}
+.wrap_10 {
+  padding-bottom: 14px;
+}
+.wrap_11 {
+  padding-top: 33px;
+}
+.wrap_12 {
+  padding-bottom: 21px;
+}
+.wrap_13 {
+  padding-top: 12px;
+}
+.wrap_14 {
+  padding-top: 31px;
+}
+.wrap_15 {
+  padding-bottom: 28px;
+}
+.wrap_16 {
+  padding-top: 12px;
+}
 .wrap_17 {
-  padding-top: 50px;
+  padding-top: 20px;
 }
 .wrap_18 {
-  padding-top: 117px;
+  padding-top: 37px;
 }
 .wrap_19 {
-  padding-bottom: 115px;
+  padding-bottom: 35px;
 }
 .wrap_20 {
-  padding-bottom: 46px;
+  padding-bottom: 26px;
 }
 @media (max-width: 767px) {
   .wrap_11,
@@ -435,11 +440,11 @@ img {
   text-decoration: none;
 }
 .btn_2 {
-  display: inline-block;
-  padding: 4px 20px 3px;
-  font: 400 24px/30px 'Marvel', sans-serif;
-  color: #413d3d;
-  background: #f1f045;
+    display: inline-block;
+    padding: 4px 20px 3px;
+    font: 400 24px/30px 'Marvel', sans-serif;
+    color: #ffffff;
+    background: #0066cc;
 }
 .btn_2:hover {
   color: #ffffff;
@@ -720,11 +725,11 @@ img {
 .list_1 li a.fa-google-plus:before {
   padding-left: 6px;
 }
-.list_1 li a.fa-pinterest {
+.list_1 li a.fa-linkedin {
   line-height: 50px;
   font-size: 30px;
 }
-.list_1 li a.fa-pinterest:before {
+.list_1 li a.fa-linedin:before {
   padding-left: 1px;
 }
 .list_2 li {

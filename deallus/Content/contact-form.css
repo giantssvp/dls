@@ -74,6 +74,43 @@
   margin: 0;
   -webkit-appearance: none;
 }
+
+    #contact-form input[type='email'] {
+        width: 100%;
+        background-color: #ffffff;
+        border-radius: 0;
+        line-height: 19px;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        padding: 6px 27px 6px;
+        color: #363535;
+        outline: none;
+        height: 31px;
+        border: 1px solid #ababa9;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        -webkit-appearance: none;
+    }
+
+    #contact-form select {
+        width: 165%;
+        background-color: #ffffff;
+        border-radius: 0;
+        line-height: 19px;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        padding: 6px 27px 6px;
+        color: #363535;
+        outline: none;
+        height: 35px;
+        border: 1px solid #ababa9;
+        margin: 0;
+    }
+
 /* Contact Form Buttons
 ========================================================*/
 #contact-form .btn-wrap {

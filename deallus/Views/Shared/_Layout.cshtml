@@ -2,7 +2,6 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Deallus Technologies</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -19,7 +18,7 @@
                         <div class="grid_12">
                             <div class="brand put-left">                                
                                     <a href="@Url.Action("Index","Home")">
-                                        <img src=@Url.Content("~/images/logo2.png") alt="Logo"/>
+                                        <img src=@Url.Content("~/images/logo.jpg") alt="Logo"/>
                                     </a>                                
                             </div>
                             <nav class="nav put-right">
@@ -27,7 +26,6 @@
                                     <li> @Html.ActionLink("Home", "Index", "Home") </li>
                                     <li> @Html.ActionLink("About", "About", "Home") </li>
                                     <li> @Html.ActionLink("Services", "Services", "Home") </li>
-                                    <li> @Html.ActionLink("Blog", "Blog", "Home") </li>
                                     <li> @Html.ActionLink("Contact", "Contact", "Home") </li>
                                 </ul>
                             </nav>
