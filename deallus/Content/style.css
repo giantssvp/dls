@@ -566,6 +566,10 @@ img {
 .box_2 .text_3 + .btn_2 {
   margin-top: 41px;
 }
+
+box_1 .text_index {
+    text-align: justify;
+}
 @media (min-width: 980px) and (max-width: 1199px) {
   .box_2 {
     padding: 26px 5px 32px 52px;
