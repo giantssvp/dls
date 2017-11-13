@@ -151,19 +151,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\animate.css" />
+    <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\camera.css" />
     <Content Include="Content\contact-form.css" />
     <Content Include="Content\grid.css" />
+    <Content Include="Content\icomoon.css" />
     <Content Include="Content\ie.css" />
     <Content Include="Content\isotope.css" />
     <Content Include="Content\jquerysctipttop.css" />
     <Content Include="Content\owl.carousel.css" />
     <Content Include="Content\slider.css" />
     <Content Include="Content\style.css" />
+    <Content Include="Content\style_services.css" />
     <Content Include="Content\touchTouch.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\icomoon\icomoon.svg" />
     <Content Include="Global.asax" />
     <Content Include="images\AjaxLoader.gif" />
     <Content Include="images\black_bg.jpg" />
@@ -199,6 +203,7 @@
     <Content Include="images\index_slide01.jpg" />
     <Content Include="images\index_slide02.jpg" />
     <Content Include="images\index_slide03.jpg" />
+    <Content Include="images\intro.jpg" />
     <Content Include="images\logo.png" />
     <Content Include="images\preloader.gif" />
     <Content Include="images\select.png" />
@@ -209,6 +214,7 @@
     <Content Include="Scripts\camera.js" />
     <Content Include="Scripts\device.min.js" />
     <Content Include="Scripts\docs.min.js" />
+    <Content Include="Scripts\google_map.js" />
     <Content Include="Scripts\html5shiv.js" />
     <Content Include="Scripts\ie10-viewport-bug-workaround.js" />
     <Content Include="Scripts\isotope.min.js" />
@@ -224,12 +230,18 @@
     <Content Include="Scripts\jquery.mobilemenu.js" />
     <Content Include="Scripts\jquery.mousewheel.min.js" />
     <Content Include="Scripts\jquery.simplr.smoothscroll.min.js" />
+    <Content Include="Scripts\jquery.stellar.min.js" />
     <Content Include="Scripts\jquery.ui.totop.js" />
     <Content Include="Scripts\jquery.unveil.js" />
+    <Content Include="Scripts\jquery.waypoints.min.js" />
     <Content Include="Scripts\jssor.slider.min.js" />
+    <Content Include="Scripts\main.js" />
     <Content Include="Scripts\modal.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\modernizr-2.6.2.min.js" />
     <Content Include="Scripts\owl.carousel.js" />
+    <Content Include="Scripts\owl.carousel.min.js" />
+    <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\script.js" />
     <Content Include="Scripts\slider.js" />
     <Content Include="Scripts\slider.min.js" />
@@ -268,6 +280,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Services.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\icomoon\icomoon.eot" />
+    <Content Include="fonts\icomoon\icomoon.ttf" />
+    <Content Include="fonts\icomoon\icomoon.woff" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
