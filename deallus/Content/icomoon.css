@@ -1,3 +1,4 @@
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 @font-face {
     font-family: 'icomoon';
     src:    url('fonts/icomoon.eot?1oniuf');
@@ -25,14 +26,46 @@
 }
 
 .icon-mobile:before {
-    content: "\e000";
+    content: '\f10a';
+    font: 700 100px/200px 'FontAwesome';
+    color: #01918c;
 }
 .icon-laptop:before {
-    content: "\e001";
+    content: '\f109';
+    font: 700 90px/200px 'FontAwesome';
+    color: #01918c;
 }
 .icon-desktop:before {
-    content: "\e002";
+    content: '\f108';
+    font: 700 90px/200px 'FontAwesome';
+    color: #01918c;
 }
+.icon-dev:before {
+    content: '\f20e';
+    font: 700 90px/200px 'FontAwesome';
+    color: #01918c;
+}
+.icon-hosting:before {
+    content: '\f0c2';
+    font: 700 100px/200px 'FontAwesome';
+    color: #01918c;
+}
+.icon-srch:before {
+    content: '\f002';
+    font: 700 100px/200px 'FontAwesome';
+    color: #01918c;
+}
+.icon-logo:before {
+    content: '\f044';
+    font: 700 100px/200px 'FontAwesome';
+    color: #01918c;
+}
+.icon-design:before {
+    content: '\f247';
+    font: 700 90px/200px 'FontAwesome';
+    color: #01918c;
+}
+
 .icon-tablet:before {
     content: "\e003";
 }
@@ -75,9 +108,7 @@
 .icon-pictures:before {
     content: "\e010";
 }
-.icon-video:before {
-    content: "\e011";
-}
+
 .icon-camera:before {
     content: "\e012";
 }
