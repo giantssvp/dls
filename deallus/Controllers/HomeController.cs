@@ -44,6 +44,11 @@ namespace deallus.Controllers
             return View();
         }
 
+        public ActionResult GST()
+        {
+            return View();
+        }
+
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
