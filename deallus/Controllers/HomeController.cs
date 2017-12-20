@@ -32,6 +32,11 @@ namespace deallus.Controllers
             return View();
         }
 
+        public ActionResult Login()
+        {
+            return View();
+        }
+
         public ActionResult Blog()
         {
             return View();
@@ -47,12 +52,19 @@ namespace deallus.Controllers
         public ActionResult GST()
         {
             return View();
+            //return RedirectToAction("Dashboard", "Home");
         }
 
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        public ActionResult Dashboard()
+        {
+            
             return View();
         }
 

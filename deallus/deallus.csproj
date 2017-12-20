@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -155,6 +156,20 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\camera.css" />
     <Content Include="Content\contact-form.css" />
+    <Content Include="Content\gst_css\bootstrap-responsive.min.css" />
+    <Content Include="Content\gst_css\bootstrap-wysihtml5.css" />
+    <Content Include="Content\gst_css\bootstrap.min.css" />
+    <Content Include="Content\gst_css\colorpicker.css" />
+    <Content Include="Content\gst_css\datepicker.css" />
+    <Content Include="Content\gst_css\font-awesome.css" />
+    <Content Include="Content\gst_css\fullcalendar.css" />
+    <Content Include="Content\gst_css\jquery.easy-pie-chart.css" />
+    <Content Include="Content\gst_css\jquery.gritter.css" />
+    <Content Include="Content\gst_css\matrix-login.css" />
+    <Content Include="Content\gst_css\matrix-media.css" />
+    <Content Include="Content\gst_css\matrix-style.css" />
+    <Content Include="Content\gst_css\select2.css" />
+    <Content Include="Content\gst_css\uniform.css" />
     <Content Include="Content\grid.css" />
     <Content Include="Content\icomoon.css" />
     <Content Include="Content\ie.css" />
@@ -166,6 +181,9 @@
     <Content Include="Content\style_services.css" />
     <Content Include="Content\touchTouch.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\gst_font-awesome\css\font-awesome.css" />
+    <Content Include="fonts\gst_font-awesome\fontawesome-webfont.svg" />
+    <Content Include="fonts\gst_font-awesome\font\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\icomoon\icomoon.svg" />
     <Content Include="Global.asax" />
@@ -175,6 +193,74 @@
     <Content Include="images\favicon.ico" />
     <Content Include="images\form-loader.gif" />
     <Content Include="images\grabbing.png" />
+    <Content Include="images\gst_img\breadcrumb.png" />
+    <Content Include="images\gst_img\demo\av1.jpg" />
+    <Content Include="images\gst_img\demo\av2.jpg" />
+    <Content Include="images\gst_img\demo\av3.jpg" />
+    <Content Include="images\gst_img\demo\av4.jpg" />
+    <Content Include="images\gst_img\demo\av5.jpg" />
+    <Content Include="images\gst_img\demo\demo-image1.jpg" />
+    <Content Include="images\gst_img\demo\demo-image2.jpg" />
+    <Content Include="images\gst_img\demo\demo-image3.jpg" />
+    <Content Include="images\gst_img\demo\envelope.png" />
+    <Content Include="images\gst_img\gallery\imgbox1.jpg" />
+    <Content Include="images\gst_img\gallery\imgbox2.jpg" />
+    <Content Include="images\gst_img\gallery\imgbox3.jpg" />
+    <Content Include="images\gst_img\gallery\imgbox4.jpg" />
+    <Content Include="images\gst_img\gallery\imgbox5.jpg" />
+    <Content Include="images\gst_img\glyphicons-halflings-white.png" />
+    <Content Include="images\gst_img\gritter.png" />
+    <Content Include="images\gst_img\hue.png" />
+    <Content Include="images\gst_img\icons\16\book.png" />
+    <Content Include="images\gst_img\icons\16\cabinet.png" />
+    <Content Include="images\gst_img\icons\16\calendar.png" />
+    <Content Include="images\gst_img\icons\16\client.png" />
+    <Content Include="images\gst_img\icons\16\database.png" />
+    <Content Include="images\gst_img\icons\16\download.png" />
+    <Content Include="images\gst_img\icons\16\graph.png" />
+    <Content Include="images\gst_img\icons\16\home.png" />
+    <Content Include="images\gst_img\icons\16\lock.png" />
+    <Content Include="images\gst_img\icons\16\mail.png" />
+    <Content Include="images\gst_img\icons\16\pdf.png" />
+    <Content Include="images\gst_img\icons\16\people.png" />
+    <Content Include="images\gst_img\icons\16\piechart.png" />
+    <Content Include="images\gst_img\icons\16\search.png" />
+    <Content Include="images\gst_img\icons\16\shopping-bag.png" />
+    <Content Include="images\gst_img\icons\16\survey.png" />
+    <Content Include="images\gst_img\icons\16\tag.png" />
+    <Content Include="images\gst_img\icons\16\user.png" />
+    <Content Include="images\gst_img\icons\16\wallet.png" />
+    <Content Include="images\gst_img\icons\16\web.png" />
+    <Content Include="images\gst_img\icons\32\book.png" />
+    <Content Include="images\gst_img\icons\32\cabinet.png" />
+    <Content Include="images\gst_img\icons\32\calendar.png" />
+    <Content Include="images\gst_img\icons\32\client.png" />
+    <Content Include="images\gst_img\icons\32\dashboard.png" />
+    <Content Include="images\gst_img\icons\32\database.png" />
+    <Content Include="images\gst_img\icons\32\download.png" />
+    <Content Include="images\gst_img\icons\32\graph.png" />
+    <Content Include="images\gst_img\icons\32\home.png" />
+    <Content Include="images\gst_img\icons\32\lock.png" />
+    <Content Include="images\gst_img\icons\32\mail.png" />
+    <Content Include="images\gst_img\icons\32\pdf.png" />
+    <Content Include="images\gst_img\icons\32\people.png" />
+    <Content Include="images\gst_img\icons\32\piechart.png" />
+    <Content Include="images\gst_img\icons\32\search.png" />
+    <Content Include="images\gst_img\icons\32\shopping-bag.png" />
+    <Content Include="images\gst_img\icons\32\survey.png" />
+    <Content Include="images\gst_img\icons\32\tag.png" />
+    <Content Include="images\gst_img\icons\32\user.png" />
+    <Content Include="images\gst_img\icons\32\wallet.png" />
+    <Content Include="images\gst_img\icons\32\web.png" />
+    <Content Include="images\gst_img\larrow.png" />
+    <Content Include="images\gst_img\line.png" />
+    <Content Include="images\gst_img\logo.png" />
+    <Content Include="images\gst_img\menu-active.png" />
+    <Content Include="images\gst_img\rarrow.png" />
+    <Content Include="images\gst_img\saturation.png" />
+    <Content Include="images\gst_img\select2.png" />
+    <Content Include="images\gst_img\spinner.gif" />
+    <Content Include="images\gst_img\sprite.png" />
     <Content Include="images\index-1_img01.jpg" />
     <Content Include="images\index-1_img02.jpg" />
     <Content Include="images\index-1_img03.jpg" />
@@ -235,6 +321,43 @@
     <Content Include="Scripts\jquery.unveil.js" />
     <Content Include="Scripts\jquery.waypoints.min.js" />
     <Content Include="Scripts\jssor.slider.min.js" />
+    <Content Include="Scripts\gst_js\bootstrap-colorpicker.js" />
+    <Content Include="Scripts\gst_js\bootstrap-datepicker.js" />
+    <Content Include="Scripts\gst_js\bootstrap-wysihtml5.js" />
+    <Content Include="Scripts\gst_js\bootstrap.js" />
+    <Content Include="Scripts\gst_js\bootstrap.min.js" />
+    <Content Include="Scripts\gst_js\excanvas.min.js" />
+    <Content Include="Scripts\gst_js\fullcalendar.min.js" />
+    <Content Include="Scripts\gst_js\jquery.dataTables.min.js" />
+    <Content Include="Scripts\gst_js\jquery.easy-pie-chart.js" />
+    <Content Include="Scripts\gst_js\jquery.flot.crosshair.js" />
+    <Content Include="Scripts\gst_js\jquery.flot.min.js" />
+    <Content Include="Scripts\gst_js\jquery.flot.pie.js" />
+    <Content Include="Scripts\gst_js\jquery.flot.pie.min.js" />
+    <Content Include="Scripts\gst_js\jquery.flot.resize.min.js" />
+    <Content Include="Scripts\gst_js\jquery.flot.stack.js" />
+    <Content Include="Scripts\gst_js\jquery.gritter.min.js" />
+    <Content Include="Scripts\gst_js\jquery.min.js" />
+    <Content Include="Scripts\gst_js\jquery.peity.min.js" />
+    <Content Include="Scripts\gst_js\jquery.ui.custom.js" />
+    <Content Include="Scripts\gst_js\jquery.uniform.js" />
+    <Content Include="Scripts\gst_js\jquery.validate.js" />
+    <Content Include="Scripts\gst_js\jquery.wizard.js" />
+    <Content Include="Scripts\gst_js\masked.js" />
+    <Content Include="Scripts\gst_js\matrix.calendar.js" />
+    <Content Include="Scripts\gst_js\matrix.charts.js" />
+    <Content Include="Scripts\gst_js\matrix.chat.js" />
+    <Content Include="Scripts\gst_js\matrix.dashboard.js" />
+    <Content Include="Scripts\gst_js\matrix.form_common.js" />
+    <Content Include="Scripts\gst_js\matrix.form_validation.js" />
+    <Content Include="Scripts\gst_js\matrix.interface.js" />
+    <Content Include="Scripts\gst_js\matrix.js" />
+    <Content Include="Scripts\gst_js\matrix.login.js" />
+    <Content Include="Scripts\gst_js\matrix.popover.js" />
+    <Content Include="Scripts\gst_js\matrix.tables.js" />
+    <Content Include="Scripts\gst_js\matrix.wizard.js" />
+    <Content Include="Scripts\gst_js\select2.min.js" />
+    <Content Include="Scripts\gst_js\wysihtml5-0.3.0.js" />
     <Content Include="Scripts\main.js" />
     <Content Include="Scripts\modal.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
@@ -289,6 +412,30 @@
   <ItemGroup>
     <Content Include="Views\Home\GST.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Gst_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\gst_font-awesome\fontawesome-webfont.eot" />
+    <Content Include="fonts\gst_font-awesome\fontawesome-webfont.ttf" />
+    <Content Include="fonts\gst_font-awesome\fontawesome-webfont.woff" />
+    <Content Include="fonts\gst_font-awesome\FontAwesome.otf" />
+    <Content Include="fonts\gst_font-awesome\font\fontawesome-webfont.eot" />
+    <Content Include="fonts\gst_font-awesome\font\fontawesome-webfont.ttf" />
+    <Content Include="fonts\gst_font-awesome\font\fontawesome-webfont.woff" />
+    <Content Include="fonts\gst_font-awesome\font\FontAwesome.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\gst_img\demo\Thumbs.db" />
+    <Content Include="images\gst_img\icons\32\Thumbs.db" />
+    <Content Include="images\gst_img\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Login_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Dashboard.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -303,7 +450,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>56418</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

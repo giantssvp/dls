@@ -33,6 +33,51 @@ namespace deallus
                       "~/Content/bootstrap.min.css",
                       "~/Content/jquerysctipttop.css",                      
                       "~/Content/style.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/gst_js").Include(
+                        "~/Scripts/gst_js/jquery.min.js",
+                        "~/Scripts/gst_js/jquery.ui.custom.js",
+                        "~/Scripts/gst_js/bootstrap.min.js",
+                        "~/Scripts/gst_js/jquery.flot.min.js",
+                        "~/Scripts/gst_js/jquery.flot.resize.min.js",
+                        "~/Scripts/gst_js/jquery.peity.min.js",
+                        "~/Scripts/gst_js/fullcalendar.min.js",
+                        "~/Scripts/gst_js/matrix.js",
+                        "~/Scripts/gst_js/matrix.dashboard.js",
+                        "~/Scripts/gst_js/jquery.gritter.min.js",
+                        "~/Scripts/gst_js/matrix.interface.js",
+                        "~/Scripts/gst_js/matrix.chat.js",
+                        "~/Scripts/gst_js/jquery.validate.js",
+                        "~/Scripts/gst_js/matrix.form_validation.js",
+                        "~/Scripts/gst_js/jquery.wizard.js",
+                        "~/Scripts/gst_js/jquery.uniform.js",
+                        "~/Scripts/gst_js/select2.min.js",
+                        "~/Scripts/gst_js/matrix.popover.js",
+                        "~/Scripts/gst_js/jquery.dataTables.min.js",
+                        "~/Scripts/gst_js/matrix.tables.js"
+                       ));
+
+            bundles.Add(new StyleBundle("~/Content/gst_css").Include(
+                    "~/Content/gst_css/bootstrap.min.css",
+                    "~/Content/gst_css/bootstrap-responsive.min.css",
+                    "~/Content/gst_css/fullcalendar.css",
+                    "~/Content/gst_css/matrix-style.css",
+                    "~/Content/gst_css/matrix-media.css",
+                    "~/font/gst_font-awesome.css",
+                    "~/Content/gst_css/jquery.gritter.css"
+                    ));
+
+            bundles.Add(new ScriptBundle("~/bundles/login_js").Include(
+                        "~/Scripts/gst_js/jquery.min.js",
+                        "~/Scripts/gst_js/matrix.login.js"
+                        ));
+
+            bundles.Add(new StyleBundle("~/Content/login_css").Include(
+                    "~/Content/gst_css/bootstrap.min.css",
+                    "~/Content/gst_css/bootstrap-responsive.min.css",
+                    "~/Content/gst_css/matrix-login.css",
+                    "~/font/gst_font-awesome.css"
+                    ));
         }
     }
 }
