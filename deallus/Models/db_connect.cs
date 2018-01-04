@@ -10,10 +10,16 @@ namespace deallus.Models
     {
         private MySqlConnection connection;
 
+        /*
+         open database connection
+         Function name: open connection
+         Args: 
+
+         **/
         private bool OpenConnection()
         {
             string connetionString = null;
-            connetionString = "server=182.50.133.77;database=common_db;uid=commonadmin;pwd=Common@123;Allow User Variables=True;";
+            connetionString = "server=182.50.133.77;database=dls_gst;uid=gstadmin;pwd=Gstadmin@123;Allow User Variables=True;";
             connection = new MySqlConnection(connetionString);
             try
             {
@@ -27,6 +33,12 @@ namespace deallus.Models
             }
         }
 
+        /*
+         close database connection
+         Function name: close connection
+         Args: 
+
+         **/
         private bool CloseConnection()
         {
             try
@@ -40,6 +52,16 @@ namespace deallus.Models
             }
         }
 
+        /*
+         Insert contat info in database 
+         Function name: insert
+         Args: 
+         name:
+         email:
+         phone:
+         comment_type: enquiry, feedback, other
+         msg:
+         **/
         public int Insert(string name, string email, string phone, string comment_type, string msg)
         {
             try
@@ -70,7 +92,44 @@ namespace deallus.Models
             {
                 return -1;
             }
-        }              
+        }
+
+        /*
+         Login in database 
+         Function name: login
+         Args: 
+         username:
+         password:
+         **/
+
+        public Boolean Login(string name, string password)
+        {
+            try
+            {
+                MySqlDataReader rdr;
+                string query = "select * from gst_profile where username = @name and password = @password";
+
+                if (this.OpenConnection() == true)
+                {
+                    MySqlCommand cmd = new MySqlCommand(query, connection);
+                    cmd.Parameters.AddWithValue("@name", name);
+                    cmd.Parameters.AddWithValue("@password", password);
+                    rdr = cmd.ExecuteReader();
+                    if (rdr.Read())
+                    {
+                        this.CloseConnection();
+                        return true;
+                    }
+                }
+                this.CloseConnection();
+                return false;
+            }
+            catch (MySqlException ex)
+            {
+                return false;
+            }
+        }
+        /*Login Section*/
 
     } //db_connect class
 } // namespace

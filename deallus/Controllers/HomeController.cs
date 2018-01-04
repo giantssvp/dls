@@ -68,6 +68,35 @@ namespace deallus.Controllers
             return View();
         }
 
+        public ActionResult login_btn(string username, string password)
+        {
+            try
+            {
+                var obj = new db_connect();
+
+                if (obj.Login(username, password))
+                {
+                    TempData["AlertMessage"] = "Logged in successfully";
+                    HttpContext.Session.Add("user", 1);
+                    return RedirectToAction("Dashboard", "Home");
+
+                }
+                else
+                {
+                    TempData["AlertMessage"] = "Your username or password is not correct";
+                    HttpContext.Session.Add("user", 0);
+                    return RedirectToAction("GST", "Home");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                HttpContext.Session.Add("user", 0);
+                System.Web.HttpContext.Current.Response.Write("<script>alert('There is some issue while saving the details, please try again, Thanks.')</script>");
+                return RedirectToAction("GST", "Home");
+            }
+        }
+
         public ActionResult submit_btn_contact(string name, string email, string phone, string requesttype, string message)
         {
             try
