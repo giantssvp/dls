@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using deallus.Models;
 using System.Net.Mail;
+using System.Web.Security;
+using System.Windows.Forms;
 
 namespace deallus.Controllers
 {
@@ -21,7 +23,7 @@ namespace deallus.Controllers
         public static string mailBCC = "abcdtes26@gmail.com";
         public static string mailPassword = "9921642540";
         */
-
+        
         public ActionResult Index()
         {
             return View();
@@ -31,10 +33,11 @@ namespace deallus.Controllers
         {
             return View();
         }
-
-        public ActionResult Login()
+        
+        public ActionResult Logout()
         {
-            return View();
+            FormsAuthentication.SignOut();
+            return RedirectToAction("GST", "Home");
         }
 
         public ActionResult Blog()
@@ -49,8 +52,10 @@ namespace deallus.Controllers
             return View();
         }
 
+        [HttpGet]
         public ActionResult GST()
         {
+            Response.Write("in gst1");
             return View();
             //return RedirectToAction("Dashboard", "Home");
         }
@@ -62,14 +67,35 @@ namespace deallus.Controllers
             return View();
         }
 
+        [Authorize(Users ="shyam")]
         public ActionResult Dashboard()
         {
             
             return View();
         }
 
-        public ActionResult login_btn(string username, string password)
+        [HttpPost]
+        public ActionResult GST(Models.User user)
         {
+            Response.Write("IN GST code");
+            if (ModelState.IsValid)
+            {
+                if (user.IsValid(user.UserName, user.Password))
+                {
+                    FormsAuthentication.SetAuthCookie(user.UserName, user.RememberMe);
+                    MessageBox.Show(HttpContext.User.Identity.IsAuthenticated.ToString());
+                    MessageBox.Show(HttpContext.User.Identity.Name.ToString());
+                    return RedirectToAction("Dashboard", "Home");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Login data is incorrect!");
+                }
+
+            }
+            return View(user);
+            /*
+             * 
             try
             {
                 var obj = new db_connect();
@@ -95,6 +121,7 @@ namespace deallus.Controllers
                 System.Web.HttpContext.Current.Response.Write("<script>alert('There is some issue while saving the details, please try again, Thanks.')</script>");
                 return RedirectToAction("GST", "Home");
             }
+            */
         }
 
         public ActionResult submit_btn_contact(string name, string email, string phone, string requesttype, string message)
