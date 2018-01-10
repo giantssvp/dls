@@ -67,7 +67,7 @@ namespace deallus.Controllers
             return View();
         }
 
-        [Authorize(Users ="shyam")]
+        //[Authorize(Users ="shyam")]
         public ActionResult Dashboard()
         {
             
@@ -83,8 +83,6 @@ namespace deallus.Controllers
                 if (user.IsValid(user.UserName, user.Password))
                 {
                     FormsAuthentication.SetAuthCookie(user.UserName, user.RememberMe);
-                    MessageBox.Show(HttpContext.User.Identity.IsAuthenticated.ToString());
-                    MessageBox.Show(HttpContext.User.Identity.Name.ToString());
                     return RedirectToAction("Dashboard", "Home");
                 }
                 else
