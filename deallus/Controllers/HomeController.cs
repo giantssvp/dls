@@ -74,6 +74,11 @@ namespace deallus.Controllers
             return View();
         }
 
+        public ActionResult Products()
+        {
+
+            return View();
+        }
         [HttpPost]
         public ActionResult GST(Models.User user)
         {

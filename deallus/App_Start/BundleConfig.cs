@@ -49,7 +49,6 @@ namespace deallus
                         "~/Scripts/gst_js/matrix.js",
                         "~/Scripts/gst_js/jquery.peity.min.js",
                         "~/Scripts/gst_js/jquery.gritter.min.js",
-                        "~/Scripts/gst_js/matrix.interface.js",
                         "~/Scripts/gst_js/matrix.chat.js",                        
                         "~/Scripts/gst_js/jquery.uniform.js",
                         "~/Scripts/gst_js/select2.min.js",
@@ -59,8 +58,9 @@ namespace deallus
                         "~/Scripts/gst_js/matrix.dashboard.js"
                        ));
 
-                       //may be required for form validation
-                       // "~/Scripts/gst_js/matrix.form_validation.js"
+            //may be required for form validation
+            // "~/Scripts/gst_js/matrix.form_validation.js"
+            //"~/Scripts/gst_js/matrix.interface.js",
             bundles.Add(new StyleBundle("~/Content/gst_css").Include(
                     "~/Content/gst_css/bootstrap.min.css",
                     "~/Content/gst_css/bootstrap-responsive.min.css",
