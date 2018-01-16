@@ -38,23 +38,20 @@ namespace deallus
                         "~/Scripts/jquery.js",
                         "~/Scripts/gst_js/jquery.wizard.js",
                         "~/Scripts/gst_js/jquery.min.js",
-                        "~/Scripts/gst_js/jquery.ui.custom.js",
-                        "~/Scripts/gst_js/jquery.validate.js",
+                        "~/Scripts/gst_js/jquery.ui.custom.js",                      
                         "~/Scripts/gst_js/bootstrap.min.js",
                         "~/Scripts/gst_js/jquery.flot.min.js",
                         "~/Scripts/gst_js/jquery.flot.pie.min.js",
                         "~/Scripts/gst_js/matrix.charts.js",
                         "~/Scripts/gst_js/jquery.flot.resize.min.js",                       
                         "~/Scripts/gst_js/fullcalendar.min.js",
-                        "~/Scripts/gst_js/matrix.js",
                         "~/Scripts/gst_js/jquery.peity.min.js",
                         "~/Scripts/gst_js/jquery.gritter.min.js",
                         "~/Scripts/gst_js/matrix.chat.js",                        
                         "~/Scripts/gst_js/jquery.uniform.js",
-                        "~/Scripts/gst_js/select2.min.js",
+                        
                         "~/Scripts/gst_js/matrix.popover.js",
-                        "~/Scripts/gst_js/jquery.dataTables.min.js",
-                        "~/Scripts/gst_js/matrix.tables.js",                       
+                       
                         "~/Scripts/gst_js/matrix.dashboard.js"
                        ));
 
