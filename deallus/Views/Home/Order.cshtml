@@ -1,0 +1,127 @@
+﻿
+@{
+    ViewBag.Title = "Order";
+    Layout = "~/Views/Shared/_Gst_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="~/Content/gst_css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/Content/gst_css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="~/Content/gst_css/matrix-style.css" />
+<link rel="stylesheet" href="~/Content/gst_css/matrix-media.css" />
+<link rel="stylesheet" href="~/Content/gst_css/uniform.css" />
+<link rel="stylesheet" href="~/Content/gst_css/select2.css" />
+<link href="~/fonts/gst_font-awesome/css/font-awesome.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+
+<div id="content-header">
+    <div id="breadcrumb"> <a href='@Url.Action("Dashboard", "Home")' title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="#">Add Order</a></div>
+</div>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="widget-box">
+                <div class="widget-title">
+                    <span class="icon"> <i class="icon-info-sign"></i> </span>
+                    <h5>Add Order</h5>
+                </div>
+                <div class="widget-content nopadding">
+                    <form method="post" action="#" name="basic_validate" id="basic_validate" novalidate="novalidate">
+                        <table class="table table-striped">
+                            <tbody>
+                                <tr class="odd gradeX">
+                                    <td><label class="control-label">Customer Name</label></td>
+                                    <td>
+                                        <div class="controls">
+                                            <select>
+                                                <option>First option</option>
+                                                <option>Second option</option>
+                                                <option>Third option</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td><label class="control-label">Invoice Number</label></td>
+                                    <td> <input type="text" name="pname" id="required"></td>
+                                    <td><label class="control-label">Invoice Date</label></td>
+                                    <td><input type="text" name="phsn" id="required"></td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td><label class="control-label">Time</label></td>
+                                    <td><input type="text" name="pcgst" id="required"></td>
+                                    <td><label class="control-label">P.O. Number</label></td>
+                                    <td> <input type="text" name="psgst" id="required"></td>
+                                    <td><label class="control-label">Payment Terms</label></td>
+                                    <td><input type="text" name="pigst" id="required"></td>
+                                </tr>                                
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div class="widget-box">                
+                <div class="widget-content nopadding">
+                    <form method="post" action="#" name="basic_validate" id="basic_validate" novalidate="novalidate">
+                        <table class="table table-striped with-check">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox" id="title-table-checkbox" name="title-table-checkbox" /></th>
+                                    <th>Select Item</th>
+                                    <th>HSN</th>
+                                    <th>Packing</th>
+                                    <th>Unit (Nos)</th>
+                                    <th>Rate (INR)</th>
+                                    <th>Quantity</th>
+                                    <th>Total (INR)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="odd gradeX">
+                                    <td><input type="checkbox" id="title-table-checkbox" name="title-table-checkbox" /></td>
+                                    <td>
+                                        <div class="controls">
+                                            <select>
+                                                <option>First option</option>
+                                                <option>Second option</option>
+                                                <option>Third option</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td> <input type="text" name="pname" id="required" style="width:100px"></td>
+                                    <td><input type="text" name="phsn" id="required" style="width:100px"></td>                                 
+                                    <td><input type="text" name="pcgst" id="required" style="width:100px"></td>
+                                    <td> <input type="text" name="psgst" id="required" style="width:100px"></td>
+                                    <td><input type="text" name="pigst" id="required" style="width:100px"></td>
+                                    <td><input type="text" name="pigst" id="required" style="width:100px"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">                                        
+                                        <button class="btn btn-danger">-Delete</button>
+                                        <button class="btn btn-primary">+Add More</button>
+                                    </td>
+                                    <td colspan="4">
+                                        <label class="control-label">Net Total</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="pigst" id="required" style="width:100px">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <input type="reset" value="Reset" class="btn btn-success">
+            <input type="submit" value="Save" class="btn btn-success">
+                <div style="height:250px"></div>
+
+<script src="~/Scripts/gst_js/jquery.min.js"></script>
+<script src="~/Scripts/gst_js/jquery.ui.custom.js"></script>
+<script src="~/Scripts/gst_js/bootstrap.min.js"></script>
+<script src="~/Scripts/gst_js/jquery.uniform.js"></script>
+<script src="~/Scripts/gst_js/select2.min.js"></script>
+
+<script src="~/Scripts/gst_js/jquery.dataTables.min.js"></script>
+<script src="~/Scripts/gst_js/matrix.js"></script>
+<script src="~/Scripts/gst_js/matrix.tables.js"></script>
+
+<script src="~/Scripts/gst_js/jquery.validate.js"></script>
+<script src="~/Scripts/gst_js/matrix.form_validation.js"></script>

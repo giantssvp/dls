@@ -76,9 +76,29 @@ namespace deallus.Controllers
 
         public ActionResult Products()
         {
-
             return View();
         }
+
+        public ActionResult DailyAccount()
+        {
+            return View();
+        }
+
+        public ActionResult ViewOrder()
+        {
+            return View();
+        }
+
+        public ActionResult Order()
+        {
+            return View();
+        }
+
+        public ActionResult Customer()
+        {
+            return View();
+        }
+
         [HttpPost]
         public ActionResult GST(Models.User user)
         {
