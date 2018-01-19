@@ -4,6 +4,7 @@
     Layout = "~/Views/Shared/_Gst_Layout.cshtml";
 }
 
+
 <link rel="stylesheet" href="~/Content/gst_css/bootstrap.min.css" />
 <link rel="stylesheet" href="~/Content/gst_css/bootstrap-responsive.min.css" />
 <link rel="stylesheet" href="~/Content/gst_css/matrix-style.css" />
@@ -14,21 +15,18 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 
 <div id="content-header">
-    <div id="breadcrumb"> <a href='@Url.Action("Dashboard", "Home")' title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="#">Daily Stock Account</a></div>
+    <div id="breadcrumb"> <a href='@Url.Action("Dashboard", "Home")' title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href='@Url.Action("DailyAccount", "Home")'>Daily Stock Account</a></div>
 </div>
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span12">
             <div class="widget-box" align="left">
-                
-                    <select style="width:250px">
-                        <option>First option</option>
-                        <option>Second option</option>
-                        <option>Third option</option>
-                    </select>
-                
+                <select style="width:250px">
+                    <option>First option</option>
+                    <option>Second option</option>
+                    <option>Third option</option>
+                </select>
                 <input type="text" name="search" placeholder="search..." id="required" />
-                
             </div>
             <div class="widget-box">
                 <div class="widget-title">
@@ -69,7 +67,7 @@
                                 <td>Trident</td>
                                 <td>Trident</td>
                                 <td>Trident</td>
-                                
+
                             </tr>
                             <tr class="gradeC">
                                 <td>Trident</td>
@@ -101,7 +99,6 @@
                                 <td>Trident</td>
                                 <td>Trident</td>
                             </tr>
-
                         </tbody>
                     </table>
                 </div>
@@ -113,12 +110,11 @@
 <script src="~/Scripts/gst_js/jquery.min.js"></script>
 <script src="~/Scripts/gst_js/jquery.ui.custom.js"></script>
 <script src="~/Scripts/gst_js/bootstrap.min.js"></script>
+<script src="~/Scripts/gst_js/matrix.popover.js"></script>
 <script src="~/Scripts/gst_js/jquery.uniform.js"></script>
 <script src="~/Scripts/gst_js/select2.min.js"></script>
-
 <script src="~/Scripts/gst_js/jquery.dataTables.min.js"></script>
 <script src="~/Scripts/gst_js/matrix.js"></script>
 <script src="~/Scripts/gst_js/matrix.tables.js"></script>
-
 <script src="~/Scripts/gst_js/jquery.validate.js"></script>
 <script src="~/Scripts/gst_js/matrix.form_validation.js"></script>

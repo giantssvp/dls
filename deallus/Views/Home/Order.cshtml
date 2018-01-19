@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Order";
     Layout = "~/Views/Shared/_Gst_Layout.cshtml";
 }
@@ -14,7 +13,7 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 
 <div id="content-header">
-    <div id="breadcrumb"> <a href='@Url.Action("Dashboard", "Home")' title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="#">Add Order</a></div>
+    <div id="breadcrumb"> <a href='@Url.Action("Dashboard", "Home")' title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href='@Url.Action("Order", "Home")'>Add Order</a></div>
 </div>
 <div class="container-fluid">
     <div class="row-fluid">
@@ -111,17 +110,18 @@
             </div>
             <input type="reset" value="Reset" class="btn btn-success">
             <input type="submit" value="Save" class="btn btn-success">
-                <div style="height:250px"></div>
+          </div>
+     </div>
+</div>
 
 <script src="~/Scripts/gst_js/jquery.min.js"></script>
 <script src="~/Scripts/gst_js/jquery.ui.custom.js"></script>
 <script src="~/Scripts/gst_js/bootstrap.min.js"></script>
+<script src="~/Scripts/gst_js/matrix.popover.js"></script>
 <script src="~/Scripts/gst_js/jquery.uniform.js"></script>
 <script src="~/Scripts/gst_js/select2.min.js"></script>
-
 <script src="~/Scripts/gst_js/jquery.dataTables.min.js"></script>
 <script src="~/Scripts/gst_js/matrix.js"></script>
 <script src="~/Scripts/gst_js/matrix.tables.js"></script>
-
 <script src="~/Scripts/gst_js/jquery.validate.js"></script>
 <script src="~/Scripts/gst_js/matrix.form_validation.js"></script>

@@ -48,22 +48,18 @@ namespace deallus.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
         [HttpGet]
         public ActionResult GST()
         {
-            Response.Write("in gst1");
             return View();
-            //return RedirectToAction("Dashboard", "Home");
         }
 
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
-
             return View();
         }
 
@@ -102,7 +98,6 @@ namespace deallus.Controllers
         [HttpPost]
         public ActionResult GST(Models.User user)
         {
-            Response.Write("IN GST code");
             if (ModelState.IsValid)
             {
                 if (user.IsValid(user.UserName, user.Password))

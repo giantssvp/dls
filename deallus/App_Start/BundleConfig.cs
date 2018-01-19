@@ -39,25 +39,15 @@ namespace deallus
                         "~/Scripts/gst_js/jquery.wizard.js",
                         "~/Scripts/gst_js/jquery.min.js",
                         "~/Scripts/gst_js/jquery.ui.custom.js",                      
-                        "~/Scripts/gst_js/bootstrap.min.js",
                         "~/Scripts/gst_js/jquery.flot.min.js",
                         "~/Scripts/gst_js/jquery.flot.pie.min.js",
-                        
                         "~/Scripts/gst_js/jquery.flot.resize.min.js",                       
                         "~/Scripts/gst_js/fullcalendar.min.js",
-                        
                         "~/Scripts/gst_js/jquery.gritter.min.js",
                         "~/Scripts/gst_js/matrix.chat.js",                        
-                        "~/Scripts/gst_js/jquery.uniform.js",
-                        
-                        "~/Scripts/gst_js/matrix.popover.js"
-                       
-                        
+                        "~/Scripts/gst_js/jquery.uniform.js"                                      
                        ));
-
-            //may be required for form validation
-            // "~/Scripts/gst_js/matrix.form_validation.js"
-            //"~/Scripts/gst_js/matrix.interface.js",
+            
             bundles.Add(new StyleBundle("~/Content/gst_css").Include(
                     "~/Content/gst_css/bootstrap.min.css",
                     "~/Content/gst_css/bootstrap-responsive.min.css",
